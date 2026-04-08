@@ -9,9 +9,9 @@ public:
         }
 
         for (int i = start; i <= n; i++) {
-            temp.push_back(i);            // choose
-            backtrack(i + 1, n, k, temp); // explore
-            temp.pop_back();              // unchoose
+            temp.push_back(i);            
+            backtrack(i + 1, n, k, temp); 
+            temp.pop_back();              
         }
     }
 
